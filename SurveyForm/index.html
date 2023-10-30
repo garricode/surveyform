@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A brief description of your page goes here.">
+    <title>Fiction Reader Preferences Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="title" id="title">Fiction Reader Preferences Survey</h1>
+            <p class="description" id="description">Join the Fiction Reader Survey. Tell us your favorite fiction and themes. Your input counts!</p>
+
+            <form id="survey-form" class="survey">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" placeholder="Enter your age (1-120)" min="1" max="120" required>
+                
+                <label for="genre" class="genre">Preferred fiction genre:</label>
+                <fieldset class="checkbooks-genre">
+                  <legend>Select one or more:</legend>
+                  <label><input type="checkbox" name="genre" value="fantasy"> Fantasy</label>
+                  <label><input type="checkbox" name="genre" value="science-fiction"> Science Fiction</label>
+                  <label><input type="checkbox" name="genre" value="mystery"> Mystery</label>
+                  <label><input type="checkbox" name="genre" value="romance"> Romance</label>
+                  <label><input type="checkbox" name="genre" value="historical-fiction"> Historical Fiction</label>
+                  <label><input type="checkbox" name="genre" value="thriller"> Thriller</label>
+                  <label><input type="checkbox" name="genre" value="other"> Other</label>
+                </fieldset>
+                
+                <label for="dropdown" class="preferences">Preference for novels:</label>
+                <select id="dropdown" class="droppdown-choices"> <!-- Corrected class name -->
+                    <option value="standalone">Standalone Novels</option>
+                    <option value="series">Series</option>
+                </select>
+            
+                <label for="captivation" class="story-elements">What captivates you most in fiction:</label>
+                <fieldset class="radio-story">
+                  <legend>Select one:</legend>
+                  <input type="radio" name="captivation" value="plot" id="plot">
+                  <label for="plot">A Riveting Plot</label>
+                  <input type="radio" name="captivation" value="characters" id="characters">
+                  <label for="characters">Well-Crafted Characters</label>
+                  <input type="radio" name="captivation" value="style" id="styles"> <!-- Corrected typo here -->
+                  <label for="styles">Eloquent Writing Style</label> <!-- Corrected "for" attribute -->
+                  <input type="radio" name="captivation" value="themes" id="themes">
+                  <label for="themes">Thought-Stirring Themes</label>
+                </fieldset>
+                
+                <label for="comments" class="share">Share your thoughts or suggestions to enhance your reading experience:</label>
+                <textarea id="comments" rows="4" cols="50" class="text-area"></textarea>
+
+                <button type="submit" class="button" id="submit">Submit</button>
+            </form>
+        </header>
+    </main>
+    <footer>
+        <p>&copy; A <a href="http://www.freecodecamp.com/" title="Free Code Camp" target="_blank" class="fcc-link">Free Code Camp</a>
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" title="Survey Form" target="_blank" class="survey-link">Survey Form</a>
+            written and coded by <a href="https://www.freecodecamp.com/garricode" title="garricode" target="_blank" class="author-link">Rafael Garrigos</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

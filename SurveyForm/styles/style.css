@@ -1,0 +1,180 @@
+/* Resetting default margin and padding */
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+    color: #333; /* Dark gray font color */
+}
+
+/* Styling the title and description */
+.title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #333; /* Dark gray font color */
+    font-family: 'Oswald', sans-serif;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #666; /* Slightly lighter gray font color for description */
+}
+
+/* Styling the form labels and inputs */
+.survey {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #ffffff, #f5f5f5);
+    color: #333; /* Dark gray font color */
+    padding: 5px; /* Reduce overall padding for the entire form */
+}
+
+.survey label {
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px; /* Reduce margin-top for compact spacing */
+    color: #444; /* Slightly darker gray font color for labels */
+}
+
+.survey input[type="text"],
+.survey input[type="email"],
+.survey input[type="number"] {
+    font-size: 1rem;
+    width: 50%; /* Adjust the width as per your preference, for example, 80% of the parent container */
+    margin-top: 8px;
+    padding: 5px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.checkbooks-genre {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* Styling the genre checkboxes */
+.checkbooks-genre label {
+    display: block;
+    font-size: 1rem;
+    margin-top: 4px; /* Reduce margin-top for compact spacing */
+    color: #444; /* Slightly darker gray font color for labels */
+}
+
+/* Styling the preferences dropdown */
+.droppdown-choices {
+    width: 25%; /* Adjust the width as per your preference, for example, 90% of the parent container */
+    font-size: 1rem;
+    margin-top: 4px; /* Reduce margin-top for compact spacing */
+    color: #333; /* Dark gray font color for dropdown text */
+}
+
+/* Styling for the radio buttons within the radio-story fieldset */
+.radio-story input[type="radio"] {
+    vertical-align: middle; /* Adjust vertical alignment of radio buttons */
+    margin-right: 5px; /* Add a margin to the right for spacing between radio buttons and labels */
+}
+
+/* Styling for the labels associated with radio buttons */
+.radio-story label {
+    display: inline-block; /* Change from flex to inline-block */
+    font-size: 1rem;
+    margin-top: 2px; /* Reduce the margin-top to adjust spacing */
+    color: #333; /* Dark gray font color for radio button labels */
+}
+
+
+
+/* Styling for the "share" class */
+.share {
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px; /* Reduce margin-top for compact spacing */
+    color: #333; /* Dark gray font color for textarea label */
+}
+
+/* Styling for the "text-area" class */
+.text-area {
+    font-size: 1rem;
+    width: 90%; /* Adjust the width as per your preference, for example, 90% of the parent container */
+    margin-top: 8px; /* Adjusted margin-top for better spacing */
+    color: #333; /* Dark gray font color for textarea text */
+    padding: 5px; /* Smaller textarea padding for more compactness */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Styling the submit button */
+.button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #333; /* Dark gray background color that matches the font color */
+    color: #fff; /* White font color for contrast */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    margin-top: 5px; /* Reduce margin-top for compact spacing */
+}
+
+.button:hover {
+    background-color: #444; /* Slightly darker gray on hover for a subtle effect */
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White font color for contrast */
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #fff; /* White font color for links in the footer */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Additional styling for the footer links */
+.fcc-link {
+    font-weight: bold;
+}
+
+.survey-link {
+    font-weight: bold;
+}
+
+.author-link {
+    font-weight: bold;
+}
+
+/* Responsive design for the footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .survey {
+        max-width: 100%;
+    }
+
+    .survey label {
+        font-size: 0.9rem;
+    }
+
+    .survey input[type="text"],
+    .survey input[type="email"],
+    .survey input[type="number"] {
+        font-size: 0.9rem;
+    }
+}
